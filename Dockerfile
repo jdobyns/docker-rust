@@ -1,8 +1,8 @@
 FROM beilber/steamcmd
 
-
 ADD wrapper.sh /wrapper
 ADD mount.cfg /mount.cfg
+ADD validate.sh /validate.sh
 
 RUN \
   chmod +x /wrapper
