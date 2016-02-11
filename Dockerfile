@@ -13,4 +13,4 @@ ENTRYPOINT ["/wrapper"]
 
 # Expose ports.
 EXPOSE 27015
-EXPOSE 27016
+EXPOSE 27005
