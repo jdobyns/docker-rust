@@ -1,12 +1,9 @@
 #!/bin/bash
 
 HOME="/root/steamcmd"
-APPDIR="/root/steamcmd/appdir"
-RUNCMD="$APPDIR/gmod/srcds_run -console -game garrysmod"
+RUNCMD="$HOME/steamcmd.sh "
 
-# if mount cfg not there
 if [ "$UPDATE" == "true" ] || [ "$UPDATE" == "TRUE" ] ; then
-#if [ ! -f /root/steamcmd/appdir/gmod/garrysmod/cfg/mount.cfg ]; then
 	echo "Validtion needed"
 	sh /validate.sh
 fi
@@ -21,13 +18,6 @@ RUNCMD="$RUNCMD +maxplayers \"$MAXPLAYERS\""
 if [ -z "$MAP" ]
 then
 	MAP="gm_construct"
-fi
-
-RUNCMD="$RUNCMD +map \"$MAP\""
-
-if [ -z "$GAMEMODE" ]
-then
-	GAMEMODE=sandbox
 fi
 
 RUNCMD="$RUNCMD +gamemode \"$GAMEMODE\""
