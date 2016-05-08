@@ -16,7 +16,7 @@ RUNCMD="$RUNCMD -server.maxplayers \"$MAXPLAYERS\""
 
 if [ -z "$HOSTNAME" ]
 then
-        HOSTNAME="Rust Powered by Docker"
+        HOSTNAME="rust.opsflo.com"
 fi
 RUNCMD="$RUNCMD -server.hostname \"$HOSTNAME\""
 
@@ -34,13 +34,13 @@ RUNCMD="$RUNCMD -server.worldsize \"$WORLDSIZE\""
 
 if [ -z "$IDENTITY" ]
 then
-        IDENTITY="Rust_Powered_by_Docker"
+        IDENTITY="rust.opsflo.com"
 fi
 RUNCMD="$RUNCMD -server.identity \"$IDENTITY\""
 
 if [ -z "$DESCRIPTION" ]
 then
-        DESCRIPTION="Rust Powered by Docker"
+        DESCRIPTION="rust.opsflo.com"
 fi
 RUNCMD="$RUNCMD -server.description \"$DESCRIPTION\""
 
